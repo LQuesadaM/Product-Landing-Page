@@ -12,17 +12,27 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 74px 1fr 100px;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        ". footer ."
+    ;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
 }
 
 .wrap-header {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 98%;
-    min-height: 70px;
     position: fixed;
+    min-height: 70px;
+    grid-area: header;
     background-color: #fff;
 }
 
@@ -38,11 +48,10 @@ body {
 .nav-bar__list {
     width: 35vw;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
-.nav-bar__item {
+.nav-bar__item, .footer-bar__item {
     list-style: none;
 }
 
@@ -52,15 +61,26 @@ body {
 }
 
 .main {
-    grid-column: 2 / 5;
+    width: 650px;
+    margin: auto;
+    grid-area: main;
+   
     background-color: lightblue;
 }
 
 .form-section {
-    margin-top: 75px;
+    margin: auto;
+    background-color: bisque;
+}
+
+.form {
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
 }
 
 
 .footer {
+    grid-area: footer;
     background-color: lightcoral;
 }
