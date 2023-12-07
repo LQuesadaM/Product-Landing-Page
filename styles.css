@@ -14,7 +14,7 @@ body {
 .wrap-header {
     position: fixed;
     top: 0;
-
+    z-index: 1;
     width: 100%;
     min-height: 70px;
     display: flex;
@@ -50,8 +50,28 @@ body {
 
 
 .main {
+    position: relative;
+    top: 80px;
     background-color: lightgoldenrodyellow;
 }
+
+.form-section {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.form-input {
+    display: inline;
+}
+
+
 
 .footer {
     background-color: lightpink;
