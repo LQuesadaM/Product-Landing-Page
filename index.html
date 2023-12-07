@@ -18,12 +18,14 @@
   </head>
   <body>
     <div class="container">
-      <header id="header" class="header">
-        <img
-          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-          alt="logo Original Trombones"
-          id="header-img"
-        />
+      <header id="header" class="wrap-header">
+        <div class="header-logo">
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="logo Original Trombones"
+            id="header-img" class="logo"
+          />
+        </div>
 
         <nav class="nav-bar" id="nav-bar">
           <ul class="nav-bar__list">
@@ -57,7 +59,7 @@
           </form>
         </section>
 
-        <section class="wrap-description">
+        <section class="wrap-description" id="features">
           <article class="grid-features">
             <div class="icon">
               <i class="fa-solid fa-fire-flame-curved" style="color: #fb8804"></i>
@@ -100,11 +102,11 @@
           </article>
         </section>
 
-        <section class="wrap-video">
-          <iframe width="540" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc?si=yX12vrVhlFwsLxyL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section class="wrap-video" id="how_it_works">
+          <iframe width="540" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc?si=yX12vrVhlFwsLxyL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="video"></iframe>
         </section>
 
-        <section class="wrap-service">
+        <section class="wrap-service" id="pricing">
           <div class="card">
             <p class="card__product">TENOR TROMBONE</p>
             <h2 class="card__price">$600</h2>

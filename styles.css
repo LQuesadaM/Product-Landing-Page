@@ -2,15 +2,52 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
-.header {
-    background-color: lightblue;
+.wrap-header {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
 }
+
+.header-logo {
+    width: 50vw;
+}
+
+.logo {
+    max-width: 350px;
+    padding: 0 20px;
+}
+
+.nav-bar__list {
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar__item {
+    list-style: none;
+}
+
+.nav-bar__link {
+    color: black;
+    text-decoration: none;
+}
+
+
 
 .main {
     background-color: lightgoldenrodyellow;
