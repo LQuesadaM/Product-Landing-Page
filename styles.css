@@ -52,23 +52,47 @@ body {
 .main {
     position: relative;
     top: 80px;
-    background-color: lightgoldenrodyellow;
 }
 
 .form-section {
-    max-width: 300px;
-    margin: auto;
-    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    height: 200px;
+}
+.form-section .title {
+    margin-bottom: 20px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    align-items: center;
+    width: 100%;
 }
 
 .form-input {
-    display: inline;
+    max-width: 280px;
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 18px;
+}
+
+.btn-submit {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F1C40F;
+}
+
+.btn-submit:hover {
+    background-color: orange;
+    cursor: pointer;
 }
 
 
