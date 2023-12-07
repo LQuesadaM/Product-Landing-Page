@@ -1,47 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing-Page-freeCodeCamp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e324511bfd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <header id="header">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo Original Trombones" id="header-img">
-        
-            <nav class="nav-bar" id="nav-bar">
-                <ul class="nav-bar__list">
-                    <li class="nav-bar__item"><a href="#features" class="nav-link nav-bar__link">Features</a></li>
-                    <li class="nav-bar__item"><a href="#how_it_works" class="nav-link nav-bar__link">How It Works</a></li>
-                    <li class="nav-bar__item"><a href="#pricing" class="nav-link nav-bar__link">Pricing</a></li>
-                </ul>
-            </nav>
-        </header>
+      <header id="header" class="header">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="logo Original Trombones"
+          id="header-img"
+        />
 
-        <main class="main">
-            <h2 class="title">Handcrafted, home-made masterpieces</h2>
-            <section class="form-section">
-                <form action="https://www.freecodecamp.com/email-submit" id="form">
-                    <input type="email" name="email" id="email" placeholder="Enter your email address" class="form-input">
-                    <input type="submit" value="GET STARTED" id="submit">
-                </form>
-            </section>
+        <nav class="nav-bar" id="nav-bar">
+          <ul class="nav-bar__list">
+            <li class="nav-bar__item">
+              <a href="#features" class="nav-link nav-bar__link">Features</a>
+            </li>
+            <li class="nav-bar__item">
+              <a href="#how_it_works" class="nav-link nav-bar__link"
+                >How It Works</a
+              >
+            </li>
+            <li class="nav-bar__item">
+              <a href="#pricing" class="nav-link nav-bar__link">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-            <section class="features">
+      <main class="main">
+        <section class="form-section">
+          <h2 class="title">Handcrafted, home-made masterpieces</h2>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+              class="form-input"
+            />
+            <input type="submit" value="GET STARTED" id="submit" />
+          </form>
+        </section>
 
-            </section>
+        <section class="grid">
+          <article class="grid-features">
+            <div class="icon">
+              <i class="fa-solid fa-fire-flame-curved" style="color: #fb8804"></i>
+            </div>
+            <div class="description">
+              <h2>Premium Materials</h2>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </article>
 
-        </main>
+          <article class="grid-features">
+            <div class="icon">
+              <i class="fa-solid fa-truck" style="color: #ff8c00"></i>
+            </div>
+            <div class="description">
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your trombone as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </article>
 
-        <footer class="footer">
+          <article class="grid-features">
+            <div class="icon">
+              <i class="fa-solid fa-battery-full" style="color: #ff9600;"></i>
+            </div>
+            <div class="description">
+              <h2>Quality Assurance</h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+            </div>
+          </article>
+        </section>
+      </main>
 
-        </footer>
+      <footer class="footer">
+        <ul class="footer-bar">
+          <li class="footer-bar__item">
+            <a href="#" class="footer-bar__link">Privacy</a>
+          </li>
+          <li>
+            <a href="#" class="footer-bar__link">Terms</a>
+          </li>
+          <li>
+            <a href="#" class="footer-bar__link">Contac</a>
+          </li>
+        </ul>
+        <p class="footer-cop">Copyright 2016, Original Trombones</p>
+      </footer>
     </div>
-
-</body>
+  </body>
 </html>

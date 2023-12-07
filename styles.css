@@ -1,7 +1,21 @@
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: lightblue;
+}
+
+.main {
+    background-color: lightgoldenrodyellow;
+}
+
+.footer {
+    background-color: lightpink;
 }
