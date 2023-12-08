@@ -95,7 +95,40 @@ body {
     cursor: pointer;
 }
 
+.wrap-section {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 54px;
+    background-color: rgba(31, 88, 88, 0.178);
+}
 
+.grid-features {
+    display: flex;   
+    align-items: center; 
+}
+
+.icon {
+    display: flex;
+    height: 125px;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 170vw;
+    padding: 5px;
+}
+
+.wrap-video {
+    margin: auto;
+    background-color: aqua;
+}
 
 .footer {
     background-color: lightpink;
