@@ -12,6 +12,7 @@
     --bgc_footer: #DDD;
     --btn_color: #F1C40F;
     --btn_hover: orange;
+    --colorBlack: #000;
 }
 
 body {
@@ -193,5 +194,32 @@ body {
 .footer {
     position: relative;
     top: 125px;
+    max-width: 950px;
+    margin: auto;
+    padding: 26px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     background-color: var(--bgc_footer);
 }
+
+.footer-bar {
+    display: flex;
+    
+}
+
+.footer-bar__item {
+    list-style: none;
+    margin-right: 18px;
+}
+
+.footer-bar__link {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+.footer-cop {
+    margin-top: 5px;
+    font-size: .9rem;
+}
+
