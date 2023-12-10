@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+:root {
+    --bgcolor_header: #fff;
+    --bgc_card__product: #DDD;
+    --bgc_footer: #DDD;
+    --btn_color: #F1C40F;
+    --btn_hover: orange;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -22,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--bgcolor_header);
 }
 
 .header-logo {
@@ -89,11 +97,11 @@ body {
     padding: 5px 20px;
     border: none;
     border-radius: 3px;
-    background-color: #F1C40F;
+    background-color: var(--btn_color);
 }
 
 .btn-submit:hover {
-    background-color: orange;
+    background-color: var(--btn_hover);
     cursor: pointer;
 }
 
@@ -154,7 +162,7 @@ body {
 .card__product {
     font-weight: 700;
     padding: 16px 65px;
-    background-color: #DDDDDD;
+    background-color: var(--bgc_card__product);
     border-bottom: 1px solid transparent;
 }
 
@@ -172,18 +180,18 @@ body {
     text-transform: uppercase;
     font-size: 1rem;
     border: none;
-    background-color: #F1C40F;
+    background-color: var(--btn_color);
     border-radius: 2px;
 }
 
 .btn:hover {
-    background-color: orange;
+    background-color: var(--btn_hover);
 }
 
 /* footer */
 
 .footer {
     position: relative;
-    top: 300px;
-    background-color: lightpink;
+    top: 125px;
+    background-color: var(--bgc_footer);
 }
