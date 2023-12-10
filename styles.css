@@ -227,9 +227,6 @@ body {
 
 /* @media */
 @media only screen and (max-width: 550px){
-    .wrap-header {
-        background-color: aqua;
-    }
     .wrap-section {
         padding: 0;
     }
